@@ -1,0 +1,115 @@
+/* //   * - universal selector     */
+
+*{  
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:'Times New Roman', Times, serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+header{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 1em;   
+    /* 1 em - 2 px */
+    text-align: center;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* margin-right: 20px; */
+    justify-content: space-between;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+    padding: 1em;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #444;
+}
+
+main {
+    padding-top: 60px;
+}
+
+.hero {
+    background-image: url('https://rezdy.com//wp-content/uploads/2016/04/Blog-Photos-9.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.hero button{
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 1em 2em;
+    cursor: pointer;
+    transition: background-color 0.3 ease;
+}
+
+.hero button:hover{
+    background-color: #444;
+}
+
+.destinations {
+    padding: 2em;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 1em;
+    padding: 1em;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: blur(2px);
+    transition: filter 0.3s ease;
+}
+
+.card:hover img{
+    filter: blur(0);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+}
